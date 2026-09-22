@@ -1,0 +1,16 @@
+import sample from '../data/sample-catalogue.json';
+
+const BASE=import.meta.env.VITE_API_URL||'http://localhost:4000/api';
+const configured=Boolean(import.meta.env.VITE_SUPABASE_URL&&import.meta.env.VITE_SUPABASE_ANON_KEY&&import.meta.env.VITE_API_URL&&!import.meta.env.VITE_SUPABASE_URL.includes('YOUR_PROJECT')&&!import.meta.env.VITE_SUPABASE_ANON_KEY.includes('YOUR_PUBLIC'));
+async function request(path,options={}){const {accessToken,...rest}=options;const r=await fetch(`${BASE}${path}`,{...rest,headers:{'Content-Type':'application/json',...(accessToken?{Authorization:`Bearer ${accessToken}`} :{}),...rest.headers}});const body=await r.json().catch(()=>({}));if(!r.ok)throw new Error(body.message||'Something went wrong. Please try again.');return body;}
+function localProducts(q='') {const params=new URLSearchParams(q.replace(/^\?/,''));let products=sample.products.filter(p=>p.is_active);const search=(params.get('search')||'').toLowerCase();if(search)products=products.filter(p=>`${p.name} ${p.description}`.toLowerCase().includes(search));const category=params.get('category');if(category)products=products.filter(p=>p.category.slug===category);if(params.get('featured')==='true')products=products.filter(p=>p.featured);const limit=Number(params.get('limit')||0);if(limit)products=products.slice(0,limit);return {products};}
+export async function uploadProductImage(file,token){if(!configured)throw new Error('Configure Supabase before uploading images.');const form=new FormData();form.append('image',file);const r=await fetch(`${BASE}/admin/storage/product-image`,{method:'POST',headers:{Authorization:`Bearer ${token}`},body:form});const body=await r.json().catch(()=>({}));if(!r.ok)throw new Error(body.message||'Image upload failed');return body;}
+export const api={
+  products:(q='')=>configured?request(`/products${q}`):Promise.resolve(localProducts(q)),
+  product:(id)=>configured?request(`/products/${id}`):Promise.resolve({product:sample.products.find(p=>p.id===id||p.slug===id)}).then(x=>{if(!x.product)throw new Error('Product not found');return x}),
+  categories:()=>configured?request('/categories'):Promise.resolve({categories:sample.categories}),
+  createOrder:(body)=>{if(configured)return request('/orders',{method:'POST',body:JSON.stringify(body)});const num='ORD-DEMO-'+Date.now();const items=(body.items||[]).map(x=>{const p=sample.products.find(pr=>pr.id===x.product_id)||{name:'Item',price:0};return {product_name:p.name,quantity:x.quantity,unit_price:Number(p.price),subtotal:Number(p.price)*x.quantity};});const subtotal=items.reduce((s,i)=>s+i.subtotal,0);const delivery=0;return Promise.resolve({order:{order_number:num,customer_name:body.customer_name,mobile:body.mobile,address:body.address,city:body.city,state:body.state,pincode:body.pincode,notes:body.notes||'',items,subtotal,delivery_charge:delivery,total_amount:subtotal+delivery}});},
+  order:(id)=>configured?request(`/orders/${id}`):Promise.reject(new Error('Configure Supabase to view saved orders.')),
+  admin:(path,token,options={})=>configured?request(`/admin${path}`,{...options,accessToken:token}):Promise.reject(new Error('Configure Supabase to use the admin workspace.'))
+};
+export const demoMode=!configured;

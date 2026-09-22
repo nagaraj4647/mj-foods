@@ -1,0 +1,1 @@
+{"name":"sivani-foods","private":true,"scripts":{"install:all":"npm --prefix frontend install && npm --prefix backend install","build":"npm --prefix frontend run build && npm --prefix backend run check","test":"npm --prefix backend test && npm --prefix frontend test -- --run"}}

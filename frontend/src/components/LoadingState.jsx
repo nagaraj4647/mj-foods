@@ -1,0 +1,1 @@
+export default function LoadingState(){return <div className="container-page py-20 text-center" role="status"><div className="mx-auto h-9 w-9 animate-spin rounded-full border-4 border-brand-100 border-t-brand-700"/><p className="mt-4 text-stone-600">Loading…</p></div>}

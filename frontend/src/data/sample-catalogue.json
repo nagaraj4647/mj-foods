@@ -1,0 +1,998 @@
+{
+  "categories": [
+    {
+      "name": "Snacks",
+      "slug": "snacks",
+      "description": "Crunchy traditional savouries and tea-time snacks.",
+      "id": "snacks",
+      "is_active": true
+    },
+    {
+      "name": "Sweets",
+      "slug": "sweets",
+      "description": "Festive South Indian sweets made in small batches.",
+      "id": "sweets",
+      "is_active": true
+    },
+    {
+      "name": "Masala & Powders",
+      "slug": "masala",
+      "description": "Freshly ground masalas and podis for everyday cooking.",
+      "id": "masala",
+      "is_active": true
+    },
+    {
+      "name": "Pickles",
+      "slug": "pickles",
+      "description": "Slow-matured pickles in traditional spice bases.",
+      "id": "pickles",
+      "is_active": true
+    },
+    {
+      "name": "Ready-to-Eat",
+      "slug": "ready-to-eat",
+      "description": "Instant mixes for quick breakfast and lunch.",
+      "id": "ready-to-eat",
+      "is_active": true
+    },
+    {
+      "name": "Health Mix & Flours",
+      "slug": "health-mix",
+      "description": "Millet flours and traditional health mixes.",
+      "id": "health-mix",
+      "is_active": true
+    }
+  ],
+  "products": [
+    {
+      "name": "Ribbon Pakoda",
+      "slug": "ribbon-pakoda",
+      "category": {
+        "id": "snacks",
+        "name": "Snacks",
+        "slug": "snacks"
+      },
+      "category_name": "Snacks",
+      "description": "Crisp ribbon-shaped rice flour pakoda seasoned with chilli and sesame.",
+      "price": 150,
+      "weight": "250 g",
+      "stock": 40,
+      "featured": true,
+      "image_file": "ribbon-pakoda.jpg",
+      "id": "ribbon-pakoda",
+      "image_url": "/products/ribbon-pakoda.jpg",
+      "is_active": true
+    },
+    {
+      "name": "Kai Murukku",
+      "slug": "kai-murukku",
+      "category": {
+        "id": "snacks",
+        "name": "Snacks",
+        "slug": "snacks"
+      },
+      "category_name": "Snacks",
+      "description": "Hand-twisted rice and urad dal murukku, fried to a deep golden crunch.",
+      "price": 170,
+      "weight": "250 g",
+      "stock": 35,
+      "featured": true,
+      "image_file": "kai-murukku.jpg",
+      "id": "kai-murukku",
+      "image_url": "/products/kai-murukku.jpg",
+      "is_active": true
+    },
+    {
+      "name": "Thattai",
+      "slug": "thattai",
+      "category": {
+        "id": "snacks",
+        "name": "Snacks",
+        "slug": "snacks"
+      },
+      "category_name": "Snacks",
+      "description": "Thin, crunchy rice flour thattai with roasted gram and curry leaves.",
+      "price": 140,
+      "weight": "200 g",
+      "stock": 30,
+      "featured": false,
+      "image_file": "thattai.jpg",
+      "id": "thattai",
+      "image_url": "/products/thattai.jpg",
+      "is_active": true
+    },
+    {
+      "name": "Kara Sev",
+      "slug": "kara-sev",
+      "category": {
+        "id": "snacks",
+        "name": "Snacks",
+        "slug": "snacks"
+      },
+      "category_name": "Snacks",
+      "description": "Spicy thick sev pressed from besan and rice flour with pepper heat.",
+      "price": 160,
+      "weight": "250 g",
+      "stock": 28,
+      "featured": false,
+      "image_file": "kara-sev.jpg",
+      "id": "kara-sev",
+      "image_url": "/products/kara-sev.jpg",
+      "is_active": true
+    },
+    {
+      "name": "Omapodi",
+      "slug": "omapodi",
+      "category": {
+        "id": "snacks",
+        "name": "Snacks",
+        "slug": "snacks"
+      },
+      "category_name": "Snacks",
+      "description": "Fine, melt-in-the-mouth ajwain (omam) flavoured sev.",
+      "price": 130,
+      "weight": "200 g",
+      "stock": 45,
+      "featured": false,
+      "image_file": "omapodi.jpg",
+      "id": "omapodi",
+      "image_url": "/products/omapodi.jpg",
+      "is_active": true
+    },
+    {
+      "name": "Madras Mixture",
+      "slug": "madras-mixture",
+      "category": {
+        "id": "snacks",
+        "name": "Snacks",
+        "slug": "snacks"
+      },
+      "category_name": "Snacks",
+      "description": "Classic mixture of boondi, sev, fried gram, peanuts and curry leaves.",
+      "price": 180,
+      "weight": "250 g",
+      "stock": 50,
+      "featured": true,
+      "image_file": "madras-mixture.jpg",
+      "id": "madras-mixture",
+      "image_url": "/products/madras-mixture.jpg",
+      "is_active": true
+    },
+    {
+      "name": "Banana Chips",
+      "slug": "banana-chips",
+      "category": {
+        "id": "snacks",
+        "name": "Snacks",
+        "slug": "snacks"
+      },
+      "category_name": "Snacks",
+      "description": "Thin coconut-oil fried raw banana chips with a light salt finish.",
+      "price": 190,
+      "weight": "250 g",
+      "stock": 60,
+      "featured": true,
+      "image_file": "banana-chips.jpg",
+      "id": "banana-chips",
+      "image_url": "/products/banana-chips.jpg",
+      "is_active": true
+    },
+    {
+      "name": "Masala Kadalai",
+      "slug": "masala-kadalai",
+      "category": {
+        "id": "snacks",
+        "name": "Snacks",
+        "slug": "snacks"
+      },
+      "category_name": "Snacks",
+      "description": "Crunchy fried peanuts tossed in a spicy gram flour coating.",
+      "price": 120,
+      "weight": "200 g",
+      "stock": 38,
+      "featured": false,
+      "image_file": "masala-kadalai.jpg",
+      "id": "masala-kadalai",
+      "image_url": "/products/masala-kadalai.jpg",
+      "is_active": true
+    },
+    {
+      "name": "Uppu Seedai",
+      "slug": "uppu-seedai",
+      "category": {
+        "id": "snacks",
+        "name": "Snacks",
+        "slug": "snacks"
+      },
+      "category_name": "Snacks",
+      "description": "Salted rice and urad dal seedai rolled into tiny crisp balls.",
+      "price": 140,
+      "weight": "200 g",
+      "stock": 22,
+      "featured": false,
+      "image_file": "uppu-seedai.jpg",
+      "id": "uppu-seedai",
+      "image_url": "/products/uppu-seedai.jpg",
+      "is_active": true
+    },
+    {
+      "name": "Mullu Thenkuzhal",
+      "slug": "mullu-thenkuzhal",
+      "category": {
+        "id": "snacks",
+        "name": "Snacks",
+        "slug": "snacks"
+      },
+      "category_name": "Snacks",
+      "description": "Traditional spiky thenkuzhal pressed from rice and urad dal flour.",
+      "price": 150,
+      "weight": "250 g",
+      "stock": 26,
+      "featured": false,
+      "image_file": "mullu-thenkuzhal.jpg",
+      "id": "mullu-thenkuzhal",
+      "image_url": "/products/mullu-thenkuzhal.jpg",
+      "is_active": true
+    },
+    {
+      "name": "Butter Murukku",
+      "slug": "butter-murukku",
+      "category": {
+        "id": "snacks",
+        "name": "Snacks",
+        "slug": "snacks"
+      },
+      "category_name": "Snacks",
+      "description": "Soft-crunch butter murukku with a mild, rich flavour.",
+      "price": 160,
+      "weight": "250 g",
+      "stock": 18,
+      "featured": false,
+      "image_file": "butter-murukku.jpg",
+      "id": "butter-murukku",
+      "image_url": "/products/butter-murukku.jpg",
+      "is_active": true
+    },
+    {
+      "name": "Kara Boondi",
+      "slug": "kara-boondi",
+      "category": {
+        "id": "snacks",
+        "name": "Snacks",
+        "slug": "snacks"
+      },
+      "category_name": "Snacks",
+      "description": "Spicy fried boondi pearls with peanuts and curry leaves.",
+      "price": 150,
+      "weight": "250 g",
+      "stock": 4,
+      "featured": false,
+      "image_file": "kara-boondi.jpg",
+      "id": "kara-boondi",
+      "image_url": "/products/kara-boondi.jpg",
+      "is_active": true
+    },
+    {
+      "name": "Mysore Pak",
+      "slug": "mysore-pak",
+      "category": {
+        "id": "sweets",
+        "name": "Sweets",
+        "slug": "sweets"
+      },
+      "category_name": "Sweets",
+      "description": "Ghee-rich gram flour mysore pak with a soft, porous crumb.",
+      "price": 240,
+      "weight": "250 g",
+      "stock": 30,
+      "featured": true,
+      "image_file": "mysore-pak.jpg",
+      "id": "mysore-pak",
+      "image_url": "/products/mysore-pak.jpg",
+      "is_active": true
+    },
+    {
+      "name": "Boondi Laddu",
+      "slug": "boondi-laddu",
+      "category": {
+        "id": "sweets",
+        "name": "Sweets",
+        "slug": "sweets"
+      },
+      "category_name": "Sweets",
+      "description": "Sweet boondi laddu with cardamom, cashew and raisin.",
+      "price": 200,
+      "weight": "250 g",
+      "stock": 25,
+      "featured": true,
+      "image_file": "boondi-laddu.jpg",
+      "id": "boondi-laddu",
+      "image_url": "/products/boondi-laddu.jpg",
+      "is_active": true
+    },
+    {
+      "name": "Kaju Katli",
+      "slug": "kaju-katli",
+      "category": {
+        "id": "sweets",
+        "name": "Sweets",
+        "slug": "sweets"
+      },
+      "category_name": "Sweets",
+      "description": "Smooth cashew fudge cut into classic diamond pieces.",
+      "price": 450,
+      "weight": "250 g",
+      "stock": 20,
+      "featured": true,
+      "image_file": "kaju-katli.jpg",
+      "id": "kaju-katli",
+      "image_url": "/products/kaju-katli.jpg",
+      "is_active": true
+    },
+    {
+      "name": "Badusha",
+      "slug": "badusha",
+      "category": {
+        "id": "sweets",
+        "name": "Sweets",
+        "slug": "sweets"
+      },
+      "category_name": "Sweets",
+      "description": "Flaky, layered badusha soaked in light sugar syrup.",
+      "price": 220,
+      "weight": "250 g",
+      "stock": 15,
+      "featured": false,
+      "image_file": "badusha.jpg",
+      "id": "badusha",
+      "image_url": "/products/badusha.jpg",
+      "is_active": true
+    },
+    {
+      "name": "Jangiri",
+      "slug": "jangiri",
+      "category": {
+        "id": "sweets",
+        "name": "Sweets",
+        "slug": "sweets"
+      },
+      "category_name": "Sweets",
+      "description": "Urad dal jangiri piped into flower shapes and dipped in saffron syrup.",
+      "price": 230,
+      "weight": "250 g",
+      "stock": 16,
+      "featured": false,
+      "image_file": "jangiri.jpg",
+      "id": "jangiri",
+      "image_url": "/products/jangiri.jpg",
+      "is_active": true
+    },
+    {
+      "name": "Adhirasam",
+      "slug": "adhirasam",
+      "category": {
+        "id": "sweets",
+        "name": "Sweets",
+        "slug": "sweets"
+      },
+      "category_name": "Sweets",
+      "description": "Traditional jaggery and rice flour adhirasam with sesame notes.",
+      "price": 210,
+      "weight": "250 g",
+      "stock": 0,
+      "featured": false,
+      "image_file": "adhirasam.jpg",
+      "id": "adhirasam",
+      "image_url": "/products/adhirasam.jpg",
+      "is_active": true
+    },
+    {
+      "name": "Rava Laddu",
+      "slug": "rava-laddu",
+      "category": {
+        "id": "sweets",
+        "name": "Sweets",
+        "slug": "sweets"
+      },
+      "category_name": "Sweets",
+      "description": "Roasted rava laddu bound with ghee, sugar and cardamom.",
+      "price": 190,
+      "weight": "250 g",
+      "stock": 24,
+      "featured": false,
+      "image_file": "rava-laddu.jpg",
+      "id": "rava-laddu",
+      "image_url": "/products/rava-laddu.jpg",
+      "is_active": true
+    },
+    {
+      "name": "Coconut Burfi",
+      "slug": "coconut-burfi",
+      "category": {
+        "id": "sweets",
+        "name": "Sweets",
+        "slug": "sweets"
+      },
+      "category_name": "Sweets",
+      "description": "Fresh coconut burfi set with sugar and a hint of cardamom.",
+      "price": 180,
+      "weight": "250 g",
+      "stock": 28,
+      "featured": false,
+      "image_file": "coconut-burfi.jpg",
+      "id": "coconut-burfi",
+      "image_url": "/products/coconut-burfi.jpg",
+      "is_active": true
+    },
+    {
+      "name": "Tirunelveli Halwa",
+      "slug": "tirunelveli-halwa",
+      "category": {
+        "id": "sweets",
+        "name": "Sweets",
+        "slug": "sweets"
+      },
+      "category_name": "Sweets",
+      "description": "Glossy wheat halwa slow-cooked in ghee, Tirunelveli style.",
+      "price": 260,
+      "weight": "250 g",
+      "stock": 14,
+      "featured": true,
+      "image_file": "tirunelveli-halwa.jpg",
+      "id": "tirunelveli-halwa",
+      "image_url": "/products/tirunelveli-halwa.jpg",
+      "is_active": true
+    },
+    {
+      "name": "Kesaribhat",
+      "slug": "kesaribhat",
+      "category": {
+        "id": "sweets",
+        "name": "Sweets",
+        "slug": "sweets"
+      },
+      "category_name": "Sweets",
+      "description": "Saffron-tinted rava kesari with ghee-roasted cashews.",
+      "price": 170,
+      "weight": "250 g",
+      "stock": 20,
+      "featured": false,
+      "image_file": "kesaribhat.jpg",
+      "id": "kesaribhat",
+      "image_url": "/products/kesaribhat.jpg",
+      "is_active": true
+    },
+    {
+      "name": "Sambar Powder",
+      "slug": "sambar-powder",
+      "category": {
+        "id": "masala",
+        "name": "Masala & Powders",
+        "slug": "masala"
+      },
+      "category_name": "Masala & Powders",
+      "description": "Roasted coriander, chilli and dal blend for everyday sambar.",
+      "price": 120,
+      "weight": "200 g",
+      "stock": 55,
+      "featured": true,
+      "image_file": "sambar-powder.jpg",
+      "id": "sambar-powder",
+      "image_url": "/products/sambar-powder.jpg",
+      "is_active": true
+    },
+    {
+      "name": "Rasam Powder",
+      "slug": "rasam-powder",
+      "category": {
+        "id": "masala",
+        "name": "Masala & Powders",
+        "slug": "masala"
+      },
+      "category_name": "Masala & Powders",
+      "description": "Pepper-cumin rasam powder ground in small batches.",
+      "price": 110,
+      "weight": "200 g",
+      "stock": 48,
+      "featured": false,
+      "image_file": "rasam-powder.jpg",
+      "id": "rasam-powder",
+      "image_url": "/products/rasam-powder.jpg",
+      "is_active": true
+    },
+    {
+      "name": "Idli Podi",
+      "slug": "idli-podi",
+      "category": {
+        "id": "masala",
+        "name": "Masala & Powders",
+        "slug": "masala"
+      },
+      "category_name": "Masala & Powders",
+      "description": "Spicy idli podi (gunpowder) with roasted dal and sesame.",
+      "price": 100,
+      "weight": "200 g",
+      "stock": 60,
+      "featured": false,
+      "image_file": "idli-podi.jpg",
+      "id": "idli-podi",
+      "image_url": "/products/idli-podi.jpg",
+      "is_active": true
+    },
+    {
+      "name": "Curry Leaves Powder",
+      "slug": "curry-leaves-powder",
+      "category": {
+        "id": "masala",
+        "name": "Masala & Powders",
+        "slug": "masala"
+      },
+      "category_name": "Masala & Powders",
+      "description": "Aromatic curry leaves powder for rice and tiffin sides.",
+      "price": 110,
+      "weight": "150 g",
+      "stock": 32,
+      "featured": false,
+      "image_file": "curry-leaves-powder.jpg",
+      "id": "curry-leaves-powder",
+      "image_url": "/products/curry-leaves-powder.jpg",
+      "is_active": true
+    },
+    {
+      "name": "Garam Masala",
+      "slug": "garam-masala",
+      "category": {
+        "id": "masala",
+        "name": "Masala & Powders",
+        "slug": "masala"
+      },
+      "category_name": "Masala & Powders",
+      "description": "Warm whole-spice garam masala for gravies and kurma.",
+      "price": 130,
+      "weight": "100 g",
+      "stock": 40,
+      "featured": false,
+      "image_file": "garam-masala.jpg",
+      "id": "garam-masala",
+      "image_url": "/products/garam-masala.jpg",
+      "is_active": true
+    },
+    {
+      "name": "Coriander Powder",
+      "slug": "coriander-powder",
+      "category": {
+        "id": "masala",
+        "name": "Masala & Powders",
+        "slug": "masala"
+      },
+      "category_name": "Masala & Powders",
+      "description": "Freshly ground coriander powder with a bright citrus note.",
+      "price": 90,
+      "weight": "200 g",
+      "stock": 44,
+      "featured": false,
+      "image_file": "coriander-powder.jpg",
+      "id": "coriander-powder",
+      "image_url": "/products/coriander-powder.jpg",
+      "is_active": true
+    },
+    {
+      "name": "Chilli Powder",
+      "slug": "chilli-powder",
+      "category": {
+        "id": "masala",
+        "name": "Masala & Powders",
+        "slug": "masala"
+      },
+      "category_name": "Masala & Powders",
+      "description": "Sun-dried red chilli powder with deep colour and heat.",
+      "price": 110,
+      "weight": "200 g",
+      "stock": 36,
+      "featured": false,
+      "image_file": "chilli-powder.jpg",
+      "id": "chilli-powder",
+      "image_url": "/products/chilli-powder.jpg",
+      "is_active": true
+    },
+    {
+      "name": "Turmeric Powder",
+      "slug": "turmeric-powder",
+      "category": {
+        "id": "masala",
+        "name": "Masala & Powders",
+        "slug": "masala"
+      },
+      "category_name": "Masala & Powders",
+      "description": "Stone-ground turmeric powder with natural curcumin colour.",
+      "price": 80,
+      "weight": "200 g",
+      "stock": 42,
+      "featured": false,
+      "image_file": "turmeric-powder.jpg",
+      "id": "turmeric-powder",
+      "image_url": "/products/turmeric-powder.jpg",
+      "is_active": true
+    },
+    {
+      "name": "Lemon Pickle",
+      "slug": "lemon-pickle",
+      "category": {
+        "id": "pickles",
+        "name": "Pickles",
+        "slug": "pickles"
+      },
+      "category_name": "Pickles",
+      "description": "Tangy lemon pickle matured with salt, chilli and mustard.",
+      "price": 140,
+      "weight": "300 g",
+      "stock": 30,
+      "featured": true,
+      "image_file": "lemon-pickle.jpg",
+      "id": "lemon-pickle",
+      "image_url": "/products/lemon-pickle.jpg",
+      "is_active": true
+    },
+    {
+      "name": "Mango Pickle",
+      "slug": "mango-pickle",
+      "category": {
+        "id": "pickles",
+        "name": "Pickles",
+        "slug": "pickles"
+      },
+      "category_name": "Pickles",
+      "description": "Raw mango avakkai-style pickle with mustard and fenugreek.",
+      "price": 150,
+      "weight": "300 g",
+      "stock": 34,
+      "featured": false,
+      "image_file": "mango-pickle.jpg",
+      "id": "mango-pickle",
+      "image_url": "/products/mango-pickle.jpg",
+      "is_active": true
+    },
+    {
+      "name": "Tomato Pickle",
+      "slug": "tomato-pickle",
+      "category": {
+        "id": "pickles",
+        "name": "Pickles",
+        "slug": "pickles"
+      },
+      "category_name": "Pickles",
+      "description": "Slow-cooked tomato pickle with garlic and red chilli.",
+      "price": 150,
+      "weight": "300 g",
+      "stock": 22,
+      "featured": false,
+      "image_file": "tomato-pickle.jpg",
+      "id": "tomato-pickle",
+      "image_url": "/products/tomato-pickle.jpg",
+      "is_active": true
+    },
+    {
+      "name": "Garlic Pickle",
+      "slug": "garlic-pickle",
+      "category": {
+        "id": "pickles",
+        "name": "Pickles",
+        "slug": "pickles"
+      },
+      "category_name": "Pickles",
+      "description": "Whole garlic pickle in a spicy tamarind base.",
+      "price": 160,
+      "weight": "250 g",
+      "stock": 18,
+      "featured": false,
+      "image_file": "garlic-pickle.jpg",
+      "id": "garlic-pickle",
+      "image_url": "/products/garlic-pickle.jpg",
+      "is_active": true
+    },
+    {
+      "name": "Ginger Pickle",
+      "slug": "ginger-pickle",
+      "category": {
+        "id": "pickles",
+        "name": "Pickles",
+        "slug": "pickles"
+      },
+      "category_name": "Pickles",
+      "description": "Inji (ginger) pickle with jaggery-tamarind balance.",
+      "price": 140,
+      "weight": "250 g",
+      "stock": 16,
+      "featured": false,
+      "image_file": "ginger-pickle.jpg",
+      "id": "ginger-pickle",
+      "image_url": "/products/ginger-pickle.jpg",
+      "is_active": true
+    },
+    {
+      "name": "Mixed Vegetable Pickle",
+      "slug": "mixed-vegetable-pickle",
+      "category": {
+        "id": "pickles",
+        "name": "Pickles",
+        "slug": "pickles"
+      },
+      "category_name": "Pickles",
+      "description": "Crunchy mixed vegetable pickle with carrot, lime and mango.",
+      "price": 150,
+      "weight": "300 g",
+      "stock": 20,
+      "featured": false,
+      "image_file": "mixed-vegetable-pickle.jpg",
+      "id": "mixed-vegetable-pickle",
+      "image_url": "/products/mixed-vegetable-pickle.jpg",
+      "is_active": true
+    },
+    {
+      "name": "Mor Milagai",
+      "slug": "mor-milagai",
+      "category": {
+        "id": "pickles",
+        "name": "Pickles",
+        "slug": "pickles"
+      },
+      "category_name": "Pickles",
+      "description": "Buttermilk-soaked sun-dried chillies, ready to fry.",
+      "price": 130,
+      "weight": "100 g",
+      "stock": 12,
+      "featured": false,
+      "image_file": "mor-milagai.jpg",
+      "id": "mor-milagai",
+      "image_url": "/products/mor-milagai.jpg",
+      "is_active": true
+    },
+    {
+      "name": "Instant Pongal Mix",
+      "slug": "instant-pongal-mix",
+      "category": {
+        "id": "ready-to-eat",
+        "name": "Ready-to-Eat",
+        "slug": "ready-to-eat"
+      },
+      "category_name": "Ready-to-Eat",
+      "description": "Ven pongal ready mix with rice, moong dal and pepper tempering.",
+      "price": 160,
+      "weight": "250 g",
+      "stock": 25,
+      "featured": false,
+      "image_file": "instant-pongal-mix.jpg",
+      "id": "instant-pongal-mix",
+      "image_url": "/products/instant-pongal-mix.jpg",
+      "is_active": true
+    },
+    {
+      "name": "Instant Upma Mix",
+      "slug": "instant-upma-mix",
+      "category": {
+        "id": "ready-to-eat",
+        "name": "Ready-to-Eat",
+        "slug": "ready-to-eat"
+      },
+      "category_name": "Ready-to-Eat",
+      "description": "Roasted rava upma mix with cashew and curry leaf.",
+      "price": 130,
+      "weight": "250 g",
+      "stock": 30,
+      "featured": false,
+      "image_file": "instant-upma-mix.jpg",
+      "id": "instant-upma-mix",
+      "image_url": "/products/instant-upma-mix.jpg",
+      "is_active": true
+    },
+    {
+      "name": "Rava Dosa Mix",
+      "slug": "rava-dosa-mix",
+      "category": {
+        "id": "ready-to-eat",
+        "name": "Ready-to-Eat",
+        "slug": "ready-to-eat"
+      },
+      "category_name": "Ready-to-Eat",
+      "description": "Instant rava dosa mix for crisp, lacy dosas.",
+      "price": 150,
+      "weight": "250 g",
+      "stock": 27,
+      "featured": false,
+      "image_file": "rava-dosa-mix.jpg",
+      "id": "rava-dosa-mix",
+      "image_url": "/products/rava-dosa-mix.jpg",
+      "is_active": true
+    },
+    {
+      "name": "Sambar Rice Mix",
+      "slug": "sambar-rice-mix",
+      "category": {
+        "id": "ready-to-eat",
+        "name": "Ready-to-Eat",
+        "slug": "ready-to-eat"
+      },
+      "category_name": "Ready-to-Eat",
+      "description": "One-pot sambar sadham mix with vegetables and spices.",
+      "price": 170,
+      "weight": "250 g",
+      "stock": 15,
+      "featured": false,
+      "image_file": "sambar-rice-mix.jpg",
+      "id": "sambar-rice-mix",
+      "image_url": "/products/sambar-rice-mix.jpg",
+      "is_active": true
+    },
+    {
+      "name": "Puliyodarai Mix",
+      "slug": "puliyodarai-mix",
+      "category": {
+        "id": "ready-to-eat",
+        "name": "Ready-to-Eat",
+        "slug": "ready-to-eat"
+      },
+      "category_name": "Ready-to-Eat",
+      "description": "Tamarind rice mix with roasted spice podi and peanuts.",
+      "price": 140,
+      "weight": "200 g",
+      "stock": 24,
+      "featured": true,
+      "image_file": "puliyodarai-mix.jpg",
+      "id": "puliyodarai-mix",
+      "image_url": "/products/puliyodarai-mix.jpg",
+      "is_active": true
+    },
+    {
+      "name": "Lemon Rice Mix",
+      "slug": "lemon-rice-mix",
+      "category": {
+        "id": "ready-to-eat",
+        "name": "Ready-to-Eat",
+        "slug": "ready-to-eat"
+      },
+      "category_name": "Ready-to-Eat",
+      "description": "Lemon rice mix with turmeric, peanuts and curry leaves.",
+      "price": 130,
+      "weight": "200 g",
+      "stock": 20,
+      "featured": false,
+      "image_file": "lemon-rice-mix.jpg",
+      "id": "lemon-rice-mix",
+      "image_url": "/products/lemon-rice-mix.jpg",
+      "is_active": true
+    },
+    {
+      "name": "Coconut Rice Mix",
+      "slug": "coconut-rice-mix",
+      "category": {
+        "id": "ready-to-eat",
+        "name": "Ready-to-Eat",
+        "slug": "ready-to-eat"
+      },
+      "category_name": "Ready-to-Eat",
+      "description": "Coconut rice mix with roasted cashew and mild spices.",
+      "price": 140,
+      "weight": "200 g",
+      "stock": 18,
+      "featured": false,
+      "image_file": "coconut-rice-mix.jpg",
+      "id": "coconut-rice-mix",
+      "image_url": "/products/coconut-rice-mix.jpg",
+      "is_active": true
+    },
+    {
+      "name": "Sathu Maavu Health Mix",
+      "slug": "sathu-maavu-health-mix",
+      "category": {
+        "id": "health-mix",
+        "name": "Health Mix & Flours",
+        "slug": "health-mix"
+      },
+      "category_name": "Health Mix & Flours",
+      "description": "Multi-grain sathu maavu porridge mix with millets, pulses and nuts.",
+      "price": 220,
+      "weight": "500 g",
+      "stock": 26,
+      "featured": true,
+      "image_file": "sathu-maavu-health-mix.jpg",
+      "id": "sathu-maavu-health-mix",
+      "image_url": "/products/sathu-maavu-health-mix.jpg",
+      "is_active": true
+    },
+    {
+      "name": "Ragi Flour",
+      "slug": "ragi-flour",
+      "category": {
+        "id": "health-mix",
+        "name": "Health Mix & Flours",
+        "slug": "health-mix"
+      },
+      "category_name": "Health Mix & Flours",
+      "description": "Stone-ground sprouted ragi (finger millet) flour.",
+      "price": 90,
+      "weight": "500 g",
+      "stock": 38,
+      "featured": false,
+      "image_file": "ragi-flour.jpg",
+      "id": "ragi-flour",
+      "image_url": "/products/ragi-flour.jpg",
+      "is_active": true
+    },
+    {
+      "name": "Kambu Flour",
+      "slug": "kambu-flour",
+      "category": {
+        "id": "health-mix",
+        "name": "Health Mix & Flours",
+        "slug": "health-mix"
+      },
+      "category_name": "Health Mix & Flours",
+      "description": "Pearl millet (kambu) flour for porridge and roti.",
+      "price": 85,
+      "weight": "500 g",
+      "stock": 30,
+      "featured": false,
+      "image_file": "kambu-flour.jpg",
+      "id": "kambu-flour",
+      "image_url": "/products/kambu-flour.jpg",
+      "is_active": true
+    },
+    {
+      "name": "Idiyappam Rice Flour",
+      "slug": "idiyappam-rice-flour",
+      "category": {
+        "id": "health-mix",
+        "name": "Health Mix & Flours",
+        "slug": "health-mix"
+      },
+      "category_name": "Health Mix & Flours",
+      "description": "Fine roasted rice flour for soft idiyappam and puttu.",
+      "price": 95,
+      "weight": "500 g",
+      "stock": 33,
+      "featured": false,
+      "image_file": "idiyappam-rice-flour.jpg",
+      "id": "idiyappam-rice-flour",
+      "image_url": "/products/idiyappam-rice-flour.jpg",
+      "is_active": true
+    },
+    {
+      "name": "Whole Wheat Atta",
+      "slug": "whole-wheat-atta",
+      "category": {
+        "id": "health-mix",
+        "name": "Health Mix & Flours",
+        "slug": "health-mix"
+      },
+      "category_name": "Health Mix & Flours",
+      "description": "Chakki-ground whole wheat atta for soft chapati.",
+      "price": 70,
+      "weight": "500 g",
+      "stock": 50,
+      "featured": false,
+      "image_file": "whole-wheat-atta.jpg",
+      "id": "whole-wheat-atta",
+      "image_url": "/products/whole-wheat-atta.jpg",
+      "is_active": true
+    },
+    {
+      "name": "Kavuni Arisi Flour",
+      "slug": "kavuni-arisi-flour",
+      "category": {
+        "id": "health-mix",
+        "name": "Health Mix & Flours",
+        "slug": "health-mix"
+      },
+      "category_name": "Health Mix & Flours",
+      "description": "Black kavuni rice flour for traditional sweet paniyaram.",
+      "price": 180,
+      "weight": "500 g",
+      "stock": 10,
+      "featured": false,
+      "image_file": "kavuni-arisi-flour.jpg",
+      "id": "kavuni-arisi-flour",
+      "image_url": "/products/kavuni-arisi-flour.jpg",
+      "is_active": true
+    }
+  ]
+}
