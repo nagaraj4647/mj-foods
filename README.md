@@ -93,3 +93,19 @@ npm run build
 npm test
 npm --prefix frontend run lint
 ```
+
+## 10. Online UPI payment with YouPI PG (self-hosted)
+A YouPI PG (self-hosted UPI gateway) checkout is wired in alongside the existing WhatsApp order flow:
+
+- Checkout page has **Pay with UPI** (opens the YouPI hosted checkout) and **Order on WhatsApp** (unchanged).
+- `POST /api/orders/:number/pay` creates the payment session server-side. The amount is always re-read from the stored order total, never from the browser, and an idempotency key prevents duplicate sessions.
+- `POST /api/payments/youpi/webhook` is the authoritative confirmation: it verifies the `X-Gateway-Signature` HMAC-SHA256 over the raw request bytes, matches the paid amount in paise against the stored order total, then marks the order `paid` (status `confirmed`, UTR stored in `payment_reference`). It is idempotent.
+- `GET /api/orders/:number/payment` lets the order success page poll until the payment confirms.
+
+Setup:
+1. Deploy/run your YouPI PG server and note its payment API base URL.
+2. Backend `.env`: set `YOUPI_BASE_URL`, `YOUPI_WEBHOOK_SECRET` (generate: `node -e "console.log(require('crypto').randomBytes(32).toString('hex'))"`), optionally `YOUPI_MERCHANT_ID`.
+3. In the YouPI admin panel, set the merchant webhook URL to `https://<your-backend-domain>/api/payments/youpi/webhook` and the same webhook secret.
+4. No database migration is needed; the `orders` table already has `payment_status`, `payment_provider` and `payment_reference`.
+
+Before real money: run the whole flow once in YouPI's test/dummy mode, confirm the webhook arrives and flips an order to `paid`, and only then connect real bank SMS/Gmail observers. Never commit real secrets; `.env` stays local.
