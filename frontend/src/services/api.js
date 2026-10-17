@@ -11,6 +11,8 @@ export const api={
   categories:()=>configured?request('/categories'):Promise.resolve({categories:sample.categories}),
   createOrder:(body)=>{if(configured)return request('/orders',{method:'POST',body:JSON.stringify(body)});const num='ORD-DEMO-'+Date.now();const items=(body.items||[]).map(x=>{const p=sample.products.find(pr=>pr.id===x.product_id)||{name:'Item',price:0};return {product_name:p.name,quantity:x.quantity,unit_price:Number(p.price),subtotal:Number(p.price)*x.quantity};});const subtotal=items.reduce((s,i)=>s+i.subtotal,0);const delivery=0;return Promise.resolve({order:{order_number:num,customer_name:body.customer_name,mobile:body.mobile,address:body.address,city:body.city,state:body.state,pincode:body.pincode,notes:body.notes||'',items,subtotal,delivery_charge:delivery,total_amount:subtotal+delivery}});},
   order:(id)=>configured?request(`/orders/${id}`):Promise.reject(new Error('Configure Supabase to view saved orders.')),
+  payOrder:(number)=>configured?request(`/orders/${encodeURIComponent(number)}/pay`,{method:'POST',body:'{}'}):Promise.reject(new Error('Online payment needs the live backend. Configure Supabase and VITE_API_URL first.')),
+  orderPayment:(number)=>configured?request(`/orders/${encodeURIComponent(number)}/payment`):Promise.reject(new Error('Configure Supabase to view payment status.')),
   admin:(path,token,options={})=>configured?request(`/admin${path}`,{...options,accessToken:token}):Promise.reject(new Error('Configure Supabase to use the admin workspace.'))
 };
 export const demoMode=!configured;
