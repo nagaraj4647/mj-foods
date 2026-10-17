@@ -21,6 +21,9 @@ paymentsRouter.post('/orders/:number/pay',asyncHandler(async(req,res)=>{
   res.status(201).json({checkoutUrl:payment.checkoutUrl,paymentId:payment.paymentId});
 }));
 
+// Tells the storefront whether online YouPI checkout is available.
+paymentsRouter.get('/payment-options',(_q,res)=>res.json({youpi:Boolean(db&&youpiConfigured())}));
+
 // Public, low-detail status poll for the order success page.
 paymentsRouter.get('/orders/:number/payment',asyncHandler(async(req,res)=>{
   if(!db)return res.status(503).json({message:'The order service is not configured yet.'});
